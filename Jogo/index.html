@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="jogo-da-velha.ico" type="image/x-icon">
+  <title>Jogo da Velha</title>
+  
+  <link rel="stylesheet" href="css.css">
+</head>
+
+<body>
+
+  <select id="selecao">
+    <option value="opcao1">Começar com X</option>
+    <option value="opcao2">Começar com O</option>
+</select>
+
+  <table>
+    <tr>
+        <td id="td00" onclick="marcar_jogo(0, 0)"></td>
+        <td id="td01" onclick="marcar_jogo(0, 1)"></td>
+        <td id="td02" onclick="marcar_jogo(0, 2)"></td>
+    </tr>
+    <tr>
+        <td id="td10" onclick="marcar_jogo(1, 0)"></td>
+        <td id="td11" onclick="marcar_jogo(1, 1)"></td>
+        <td id="td12" onclick="marcar_jogo(1, 2)"></td>
+    </tr>
+    <tr>
+        <td id="td20" onclick="marcar_jogo(2, 0)"></td>
+        <td id="td21" onclick="marcar_jogo(2, 1)"></td>
+        <td id="td22" onclick="marcar_jogo(2, 2)"></td>
+    </tr>
+</table>
+
+<div id="reiniciar" onclick="limparCampo()">
+    <button>Reiniciar Jogo</button>
+</div>
+<div id="statusJogador">
+   <span id="vezJogador">-</span>
+</div>
+  <script src="js.js"></script>
+</body>
+
+</html>
